@@ -2,31 +2,26 @@
 	import Question from './Question.svelte';
 	import Radio from './Radio.svelte';
 	import { quiz_array } from '../stores/QuizQuestions.js';
+	import Footer from './Footer.svelte';
+	import { current_question_index } from '../stores/QuizQuestions.js';
+
+	// import stores
+	let current_question;
+	current_question_index.subscribe((value) => {
+		current_question = value;
+	});
 
 	let quiz;
 	quiz_array.subscribe((value) => {
 		quiz = value;
 	});
 
-	let current_question = 0;
-	let selected_answer_value = null;
-
-	// handle next button click
-	function nextQuestion() {
-		if (current_question < quiz.length - 1) {
-			current_question += 1;
-		}
-	}
-
-	function previousQuestion() {
-		if (current_question > 0) {
-			current_question -= 1;
-		}
-	}
-
 	function handleRadioChange(event) {
-		console.log(event.detail.value);
-		quiz[current_question].user_selected = event.detail.value;
+		// console.log(event.detail.value);
+		quiz_array.update((value) => {
+			value[current_question].user_selected = event.detail.value;
+			return value;
+		});
 	}
 </script>
 
@@ -45,20 +40,7 @@
 		on:change={handleRadioChange}
 	/>
 
-	<!-- if there is next quextion, display next button, otherwize display "end quiz" button -->
-	<div class="wrapper">
-		{#if current_question > 0}
-			<button on:click={previousQuestion}>Назад</button>
-		{/if}
-
-		{#if current_question < quiz.length - 1}
-			<button on:click={nextQuestion}>Далее</button>
-		{:else}
-			<a href="../quiz_end">
-				<button>Завершить</button>
-			</a>
-		{/if}
-	</div>
+	<Footer />
 </section>
 
 <style>
@@ -78,5 +60,8 @@
 	button {
 		width: 100px;
 		height: 50px;
+		border-radius: 15px;
+		background-color: #f3b65b;
+		border-style: none;
 	}
 </style>

@@ -39,7 +39,27 @@ const quiz = [
 			{ value: 'Novy god k nam mchitsa', label: 'Новый год к нам мчится! Скоро все случится!' }
 		],
 		user_selected: null
+	},
+	{
+		question: 'Какое высказывание про Новый год вам ближе всего?',
+		answers: [
+			{
+				value: '1',
+				label: 'Если во время празднования Нового года дело дошло до торта – праздник не удался!'
+			},
+			{ value: '2', label: ' С кем новый год встретишь – с тем его и проведешь!' },
+			{
+				value: '3',
+				label:
+					'Говорят, под новый год, что не пожелается – все всегда произойдет, все всегда сбывается!'
+			},
+			{ value: '4', label: 'Нового счастья ищи, а старого не теряй!' }
+		],
+		user_selected: null
 	}
 ];
 
+const current_question = 0;
+
 export const quiz_array = writable(quiz);
+export const current_question_index = writable(current_question);
