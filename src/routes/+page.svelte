@@ -2,104 +2,70 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>SafetyBox</title>
 </svelte:head>
 
 <section>
-	<!-- quiz welcome page with a begin button -->
-	<div class="curtain">
-		<div class="container">
-			<img class="garland" src="/src/static/graphics/hanging_garland.svg" alt="" />
-			<img class="box" src="/src/static/graphics/welcome_hanging_box.svg" alt="" />
-			<div class="text">
-				<h1>Курс на новогоднее настроение!</h1>
-			</div>
-		</div>
+	<div class="text">
+		<h2>Перед прохождением курса пройдите небольшой тест. Всего 5 вопросов!</h2>
+		<h2>Это позволит нам лучше сформировать ваш персональный курс на новогоднее настроение.</h2>
 	</div>
-
-	<a href="/quiz" class="button">Начать тест</a>
+	<div class="container"><button><a href="/quiz" class="button">Начать тест</a></button></div>
 </section>
 
 <style>
+	.container {
+		width: 100%;
+		height: 4rem;
+		margin-bottom: 4rem;
+	}
+	.text {
+		height: fit-content;
+	}
+	.text h2 {
+		margin: 5rem 0 5rem 0;
+		font-size: 2rem;
+	}
 	section {
 		margin: 0;
 		padding: 0;
-		width: 100vw;
-		height: 100vh;
+		width: 70%;
+		height: 100%;
+		margin-left: 5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	button {
+		height: 100%;
+		aspect-ratio: 3;
+		background-color: var(--safetybox-yellow);
+		border: none;
+		border-radius: 0.8rem;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+		font-weight: 600;
+		font-size: 1.5rem;
 	}
 
-	.curtain {
-		position: absolute;
-		width: 100vw;
-		height: 110vh;
-		background: linear-gradient(120deg, #962f32, #420604);
-		margin: 0;
-		bottom: 0;
-	}
-
-	/* going up animation for curtain */
-	.curtain {
-		animation: curtain-up 1.8s ease-in-out;
-		animation-fill-mode: forwards;
-		animation-delay: 0.5s;
-	}
-
-	@keyframes curtain-up {
-		0% {
-			transform: translateY(0);
+	@media only screen and (max-width: 600px) {
+		section {
+			color: var(--safetybox-yellow);
+			flex-direction: column;
+			align-items: center;
+			margin: auto;
+			width: 80%;
 		}
-		20% {
-			transform: translateY(10vh);
+		.text h2 {
+			font-size: 1.5rem;
+			margin: 2rem 0 2rem 0;
 		}
-		100% {
-			transform: translateY(-130vh);
+		.container {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 2rem;
 		}
-	}
-
-	.container {
-		position: absolute;
-		/* max-width: 94vw; */
-		width: 90vw;
-		height: 100vh;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	.box {
-		position: absolute;
-		height: 70vh;
-		width: auto;
-		top: 0;
-		left: 50%;
-		transform: translate(-50%, 0);
-	}
-
-	.garland {
-		position: absolute;
-		height: 95vh;
-		width: auto;
-		top: 0;
-		left: 0;
-	}
-
-	.curtain .text {
-		position: absolute;
-		max-width: 25em;
-		bottom: 10%;
-		right: 4%;
-	}
-
-	.curtain .text h1 {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 4em;
-		color: #f9d56e;
-		text-align: left;
-		margin: 0;
-		width: fit-content;
-
-		/* drop dark shadow */
-		text-shadow: 0.3em 0.3em 0.5em #343026;
 	}
 </style>

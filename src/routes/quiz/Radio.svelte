@@ -7,7 +7,6 @@
 	export let options; // array of objects with text and value properties
 	export let legend; // heading for the group of radio buttons
 	export let userSelected = options[0].value; // value of the selected radio button
-	export let fontSize = 16; // font size in pixels
 	export let flexDirection = 'column'; // 'row' or 'column'
 
 	const uniqueID = Math.floor(Math.random() * 100);
@@ -27,10 +26,10 @@
 	role="radiogroup"
 	class="group-container"
 	aria-labelledby={`label-${uniqueID}`}
-	style="font-size:{fontSize}px; flex-direction:{flexDirection}"
+	style="flex-direction:{flexDirection}"
 	id={`group-${uniqueID}`}
 >
-	<div class="legend" id={`label-${uniqueID}`}>{legend}</div>
+	<div class="legend" id={`label-${uniqueID}`}><h2>{legend}</h2></div>
 	{#each options as { value, label }}
 		<input
 			class="sr-only"
@@ -41,7 +40,7 @@
 			{value}
 			on:change={handleChange}
 		/>
-		<label for={slugify(label)}> {label} </label>
+		<label for={slugify(label)}> <h2>{label}</h2> </label>
 	{/each}
 </div>
 
@@ -55,14 +54,22 @@
 		border-radius: 2px;
 		display: flex;
 		flex-direction: row;
+		width: 100%;
 	}
 
 	.legend {
 		font-weight: bold;
+		margin: 0.5em 0;
 	}
 	label {
 		user-select: none;
-		line-height: 1.2em;
+		line-height: 2em;
+		margin: 0.8em;
+	}
+	h2 {
+		display: inline-block;
+		width: fit-content;
+		margin: 0;
 	}
 
 	.sr-only {
@@ -80,7 +87,9 @@
 	}
 
 	input[type='radio'] + label {
-		display: block;
+		display: flex;
+		align-items: center;
+		/* justify-content: center; */
 		position: relative;
 		text-align: left;
 	}
@@ -95,7 +104,7 @@
 		background: transparent;
 		border: 1px solid var(--gray, #ccc);
 		border-radius: 50%;
-		top: 0.2em;
+		/* top: 0.2em; */
 	}
 
 	input[type='radio']:checked + label::before {
@@ -109,7 +118,7 @@
 		display: inline-block;
 		width: 0.5em;
 		height: 0.5em;
-		top: 0.45em;
+		/* 0.45em;(top) */
 		left: 0.25em;
 		background: var(--accent-color, #282828);
 		border: 1px solid var(--accent-color, #282828);
@@ -153,7 +162,17 @@
 	}
 
 	input[type='radio']:focus + label::before {
-		box-shadow: 0 0px 8px var(--accent-color, #282828);
+		/* box-shadow: 0 0 8px var(--accent-color, #282828); */
+		border: 1px solid var(--accent-color, #282828);
 		border-radius: 50%;
+	}
+
+	@media only screen and (max-width: 600px) {
+		label {
+			margin: 0.3em;
+		}
+		h2 {
+			font-size: 1.5em;
+		}
 	}
 </style>

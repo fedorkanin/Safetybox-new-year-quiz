@@ -4,6 +4,7 @@
 	import { quiz_array } from '../stores/QuizQuestions.js';
 	import Footer from './Footer.svelte';
 	import { current_question_index } from '../stores/QuizQuestions.js';
+	import { leftDecorationBackgroundStore } from '../stores/LeftDecorationBackground';
 
 	// import stores
 	let current_question;
@@ -15,6 +16,13 @@
 	quiz_array.subscribe((value) => {
 		quiz = value;
 	});
+
+	let leftDecorationBackground;
+	leftDecorationBackgroundStore.subscribe((value) => {
+		leftDecorationBackground = value;
+	});
+
+	leftDecorationBackgroundStore.set(0);
 
 	function handleRadioChange(event) {
 		// console.log(event.detail.value);
@@ -31,37 +39,53 @@
 </svelte:head>
 
 <section>
-	<Question question_text={quiz[current_question].question} />
-
-	<Radio
-		legend="Выберите ответ"
-		options={quiz[current_question].answers}
-		userSelected={quiz[current_question].user_selected}
-		on:change={handleRadioChange}
-	/>
-
-	<Footer />
+	<div id="main-container">
+		<div class="wrapper">
+			<Question question_text={quiz[current_question].question} />
+			<div id="radio">
+				<Radio
+					legend="Выберите ответ:"
+					options={quiz[current_question].answers}
+					userSelected={quiz[current_question].user_selected}
+					on:change={handleRadioChange}
+				/>
+			</div>
+		</div>
+		<Footer />
+	</div>
 </section>
 
 <style>
 	section {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
+		height: 85%;
+		width: 100%;
+		margin-left: 5%;
 	}
 
-	.wrapper {
+	#radio {
+		margin-bottom: 2rem;
+	}
+
+	#main-container {
+		width: 90%;
+		height: 100%;
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
-		width: 30%;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
-	button {
-		width: 100px;
-		height: 50px;
-		border-radius: 15px;
-		background-color: #f3b65b;
-		border-style: none;
+	@media only screen and (max-width: 600px) {
+		section {
+			margin-left: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
 	}
 </style>

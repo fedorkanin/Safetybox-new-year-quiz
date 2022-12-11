@@ -27,7 +27,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		justify-content: center;
 		width: fit-content;
+		margin: 0 1rem 0 1rem;
 	}
 	p {
 		font-size: 1.5em;

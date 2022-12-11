@@ -49,18 +49,7 @@
 		justify-content: space-between;
 		flex-direction: row;
 		align-items: center;
-		width: 100%;
-		align-items: center;
 		width: fit-content;
-	}
-
-	button {
-		background: none;
-		border: none;
-	}
-
-	button img {
-		width: 4em;
-		cursor: pointer;
+		height: 100%;
 	}
 </style>

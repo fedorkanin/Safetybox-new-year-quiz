@@ -8,7 +8,13 @@
 
 <style>
 	h1 {
-		font-size: 1.5em;
-		margin: 0;
+		height: fit-content;
+		text-align: left;
+	}
+
+	@media only screen and (max-width: 600px) {
+		h1 {
+			margin: 1rem 0;
+		}
 	}
 </style>

@@ -22,11 +22,14 @@
 	button {
 		background: none;
 		border: none;
+		height: 100%;
+		width: auto;
+		padding: 0;
 	}
 
 	button img {
-		width: 2.5rem;
-		height: 2.5rem;
+		height: 100%;
+		width: auto;
 		cursor: pointer;
 	}
 

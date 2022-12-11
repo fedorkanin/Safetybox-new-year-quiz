@@ -43,7 +43,8 @@
 			<h3>Ваша команда SafetyBox</h3>
 		</div>
 		<div class="saying">
-			<FunnyText text={saying} animate={true} />
+			<!-- <FunnyText text={saying} animate={true} /> -->
+			<h1>{saying}</h1>
 		</div>
 	</div>
 </section>
@@ -117,5 +118,15 @@
 	}
 	.saying {
 		width: 100%;
+	}
+	h1 {
+		font-size: 3em;
+		color: var(--safetybox-yellow);
+	}
+	h2 {
+		color: var(--safetybox-yellow);
+	}
+	h3 {
+		color: var(--safetybox-yellow);
 	}
 </style>
