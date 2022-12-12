@@ -1,9 +1,12 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
+	import left_arrow from '/src/static/graphics/left_arrow.svg';
+	import right_arrow from '/src/static/graphics/right_arrow.svg';
 
 	export let direction = 'right';
 	export let greyed = false;
 
+	let arrow = direction === 'right' ? right_arrow : left_arrow;
 	// create event dispatcher to dispatch button click event
 	const dispatch = createEventDispatcher();
 
@@ -15,7 +18,7 @@
 </script>
 
 <button on:click={handleClick} class:greyed>
-	<img src="/src/static/graphics/{direction}_arrow.svg" alt="" />
+	<img src={arrow} alt="" />
 </button>
 
 <style>

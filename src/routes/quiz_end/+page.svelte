@@ -1,6 +1,6 @@
 <script>
 	import { quiz_array } from '../stores/QuizQuestions.js';
-	import FunnyText from './FunnyText.svelte';
+
 	// subscribe to the store
 	let quiz;
 	quiz_array.subscribe((value) => {
