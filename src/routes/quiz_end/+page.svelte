@@ -1,15 +1,31 @@
 <script>
 	import { quiz_array } from '../stores/QuizQuestions.js';
+	import chimney from '$lib/images/chimney.png';
+	import { group_outros } from 'svelte/internal';
+	//import all photos from static/images
+	const glob_import = import.meta.glob('$lib/images/*.png', { eager: true });
 
-	// subscribe to the store
+	// subscribe to store
 	let quiz;
 	quiz_array.subscribe((value) => {
 		quiz = value;
 	});
 
-	let box_images = [];
+	let user_selected_img_names = [];
+	let urls_array = [];
+	// get user selected values
 	for (let i = 0; i < 3; i++) {
-		box_images.push('/src/static/images/' + quiz[i].user_selected + '.png');
+		user_selected_img_names.push(quiz[i].user_selected);
+	}
+
+	// get urls of user selected images
+	for (let i = 0; i < user_selected_img_names.length; i++) {
+		for (const key in glob_import) {
+			let user_selected_to_lower = user_selected_img_names[i].toLowerCase();
+			if (key.includes(user_selected_to_lower)) {
+				urls_array.push(glob_import[key].default);
+			}
+		}
 	}
 
 	// saying
@@ -26,10 +42,10 @@
 <!-- print user selected values -->
 <section>
 	<div class="hanging-boxes">
-		{#each box_images as box_image, index}
+		{#each urls_array as image}
 			<div class="box-wrapper">
 				<img class="hanging-box" src="/src/static/graphics/hanging_box.svg" alt="" />
-				<img class="hanging-image" src={box_image} alt="" />
+				<img class="hanging-image" src={image} alt="" />
 			</div>
 		{/each}
 	</div>
@@ -90,6 +106,7 @@
 	.hanging-image {
 		position: absolute;
 		width: 50%;
+		aspect-ratio: 1;
 		height: auto;
 
 		/* bottom is parent width divided by 2 */
