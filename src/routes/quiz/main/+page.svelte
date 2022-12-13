@@ -19,7 +19,6 @@
 			value[current_question].user_selected = event.detail.value;
 			return value;
 		});
-		console.log(quiz);
 	}
 
 	if (current_question === -1) {

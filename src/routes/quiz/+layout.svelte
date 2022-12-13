@@ -25,7 +25,6 @@
 
 	$: is_answered = current_question == -1 ? true : quiz[current_question].user_selected != null;
 	$: is_button_active = is_answered || is_greeting;
-	$: console.log(is_answered);
 
 	let button_text = 'Продолжить';
 	$: if (is_greeting) {

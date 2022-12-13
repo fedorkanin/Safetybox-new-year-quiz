@@ -10,6 +10,10 @@
 </section>
 
 <style>
+	:global(body) {
+		overflow: hidden;
+		margin: 0;
+	}
 	.wrapper {
 		margin-top: 2rem;
 	}

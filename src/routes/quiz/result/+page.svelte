@@ -42,6 +42,8 @@
 			}
 		}
 	}
+
+	let hide_on_mobile = true;
 </script>
 
 <!-- print user selected values -->
@@ -49,9 +51,12 @@
 	<div id="decoration">
 		<img src={decoration} alt="" />
 	</div>
+	<div id="darken" />
 	<Star left="10" top="10" />
 	<Star right="10" top="20" />
 	<Star left="20" top="40" />
+	<Star right="30" top="70" {hide_on_mobile} />
+	<Star right="60" top="35" {hide_on_mobile} />
 	<div class="hanging-boxes">
 		{#each urls_array as image}
 			<div class="box-wrapper">
@@ -77,6 +82,13 @@
 		width: 100%;
 		height: 100%;
 		margin: 0;
+	}
+	#darken {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0);
+		opacity: 10%;
 	}
 	#decoration {
 		position: absolute;
@@ -143,8 +155,8 @@
 	#text-wrapper {
 		position: absolute;
 		right: calc(20% - 6em);
-		width: 25em;
-
+		/* width: 25em; */
+		width: 40%;
 		color: var(--soft-white);
 		font-family: 'Arial Nova Cond Light';
 		text-transform: uppercase;
@@ -177,7 +189,7 @@
 		font-weight: 300;
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 800px) {
 		/* reset styles */
 		#decoration {
 			left: 0;
