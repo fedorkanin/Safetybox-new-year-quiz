@@ -60,7 +60,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		height: 85%;
-		width: 80%;
+		width: 90%;
 	}
 	h3 {
 		font-style: italic;

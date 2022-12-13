@@ -2,7 +2,7 @@ import { writable } from 'svelte/store';
 
 const quiz = [
 	{
-		question: 'Какое ваше любимое блюдо на новогоднем столе?',
+		question: 'Какое ваше любимое новогоднее блюдо?',
 		answers: [
 			{ value: 'Tangerine', label: 'Мандарины' },
 			{ value: 'Olivier', label: 'Оливье' },

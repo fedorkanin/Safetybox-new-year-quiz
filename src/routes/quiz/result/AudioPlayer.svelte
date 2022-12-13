@@ -20,26 +20,23 @@
 	}
 
 	let audio = new Audio(urls_array[0]);
-	onMount(() => {
-		document.body.appendChild(audio);
-	});
-	audio.volume = 0.5;
-
+	document.body.appendChild(audio);
 	let is_playing = false;
 	function handlePlay() {
-		is_playing = !is_playing;
-		let was_playing = false;
-		let audios = document.getElementsByTagName('audio');
-		for (let i = 0, len = audios.length; i < len; i++) {
-			if (audios[i].paused === false) {
-				was_playing = true;
+		if (audio.paused) {
+			let audios = document.getElementsByTagName('audio');
+			for (let i = 0; i < audios.length; i++) {
+				audios[i].pause();
 			}
-			audios[i].remove();
-		}
-		if (audio.paused === true && was_playing === false) {
 			audio.play();
+			is_playing = true;
 		} else {
-			audio.pause();
+			// pause all audios on page
+			let audios = document.getElementsByTagName('audio');
+			for (let i = 0; i < audios.length; i++) {
+				audios[i].pause();
+			}
+			is_playing = false;
 		}
 	}
 </script>

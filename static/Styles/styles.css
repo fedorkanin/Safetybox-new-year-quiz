@@ -2,15 +2,23 @@
 		--safetybox-yellow: #f4b65c;
 		--safetybox-yellow-hover: #ffc56d;
         --red-background: linear-gradient(120deg, #962f32, #420604);
+        --soft-white: #e9cf9f;
 }
 
-html, body {
-    margin: 0;
+@font-face {
+    font-family: 'Arial Nova Cond Light';
+    src: url('/Fonts/arial-nova-cond-light.ttf');
+}
+
+html{
     height: 100%;
+    overflow: hidden;
 }
 
-body{
-    font-family: 'Helvetica', sans-serif
+body{ 
+    font-family: 'Helvetica', sans-serif;
+    height: 100%;
+    overflow: hidden;
 }
 
 h2, h3, p, a{

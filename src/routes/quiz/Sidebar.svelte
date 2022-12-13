@@ -4,7 +4,7 @@
 
 <div class="left_decoration" class:gradient-background={background}>
 	<img src="/src/static/graphics/hanging_asset_question.svg" alt="" />
-	<h3>Курс на новогодее настроение</h3>
+	<h3>Курс на новогоднее настроение</h3>
 </div>
 
 <style>

@@ -22,7 +22,6 @@
 		background: var(--red-background);
 	}
 
-	h1,
 	h2,
 	h3 {
 		text-align: center;

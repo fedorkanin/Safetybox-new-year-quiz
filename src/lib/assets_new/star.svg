@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 203.63 203.64">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_243);
+      }
+
+      .cls-2, .cls-3 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_242);
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_243" data-name="Degradado sin nombre 243" cx="44389.07" cy="3616.39" fx="44389.07" fy="3616.39" r="57.58" gradientTransform="translate(-3447.73 -6179.6) rotate(-1.99) scale(.08 1.77) skewX(.01)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".03" stop-color="#fdfaf7"/>
+      <stop offset=".08" stop-color="#f8eee1"/>
+      <stop offset=".14" stop-color="#efdabe"/>
+      <stop offset=".2" stop-color="#e4bf8e"/>
+      <stop offset=".25" stop-color="#daa762"/>
+      <stop offset=".31" stop-color="#daa762"/>
+      <stop offset=".32" stop-color="#d3a15e" stop-opacity=".97"/>
+      <stop offset=".39" stop-color="#a27c48" stop-opacity=".74"/>
+      <stop offset=".46" stop-color="#765a35" stop-opacity=".54"/>
+      <stop offset=".53" stop-color="#523e24" stop-opacity=".38"/>
+      <stop offset=".61" stop-color="#342717" stop-opacity=".24"/>
+      <stop offset=".69" stop-color="#1d160d" stop-opacity=".13"/>
+      <stop offset=".78" stop-color="#0c0905" stop-opacity=".06"/>
+      <stop offset=".87" stop-color="#030201" stop-opacity=".01"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Degradado_sin_nombre_242" data-name="Degradado sin nombre 242" cx="-52260.27" cy="4064.07" fx="-52260.27" fy="4064.07" r="57.56" gradientTransform="translate(7426.83 3769.24) rotate(88.01) scale(.08 1.77) skewX(.01)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".03" stop-color="#fdfaf7"/>
+      <stop offset=".08" stop-color="#f8eee1"/>
+      <stop offset=".13" stop-color="#efdabe"/>
+      <stop offset=".2" stop-color="#e4bf8e"/>
+      <stop offset=".25" stop-color="#daa762"/>
+      <stop offset=".31" stop-color="#daa762"/>
+      <stop offset=".32" stop-color="#d3a15e" stop-opacity=".97"/>
+      <stop offset=".39" stop-color="#a27c48" stop-opacity=".74"/>
+      <stop offset=".46" stop-color="#765a35" stop-opacity=".54"/>
+      <stop offset=".53" stop-color="#523e24" stop-opacity=".38"/>
+      <stop offset=".61" stop-color="#342717" stop-opacity=".24"/>
+      <stop offset=".69" stop-color="#1d160d" stop-opacity=".13"/>
+      <stop offset=".78" stop-color="#0c0905" stop-opacity=".06"/>
+      <stop offset=".87" stop-color="#030201" stop-opacity=".01"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="_Слой_9" data-name="Слой 9">
+        <g>
+          <path class="cls-2" d="M106.13,101.67c1.95,56.23,1.61,101.88-.77,101.97-2.38,.08-5.91-45.44-7.86-101.67C95.54,45.73,95.89,.08,98.27,0c2.38-.08,5.9,45.43,7.85,101.67Z"/>
+          <path class="cls-3" d="M101.97,106.14C45.74,108.09,.08,107.74,0,105.36c-.08-2.38,45.44-5.9,101.67-7.85,56.23-1.96,101.88-1.61,101.96,.77,.08,2.38-45.43,5.9-101.67,7.86Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

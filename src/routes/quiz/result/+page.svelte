@@ -54,13 +54,9 @@
 	</div>
 
 	<div class="text-wrapper">
-		<div class="wish">
-			<h2>
-				Поздравляем! Вы успешно прошли курс на новогоднее настроение! Желаем вам сохранять его весь
-				год! Ваша команда SafetyBox
-			</h2>
-			<h2>Ваша команда SafetyBox</h2>
-		</div>
+		<h2>Поздравляем!</h2>
+		<h2>Вы успешно прошли курс на новогоднее настроение! Желаем вам сохранять его весь год!</h2>
+		<h3>Ваша команда SafetyBox</h3>
 	</div>
 
 	<div id="audio">
@@ -111,12 +107,12 @@
 	}
 	.hanging-image {
 		position: absolute;
-		width: 50%;
-		aspect-ratio: 1;
-		height: auto;
+		width: 60%;
+		aspect-ratio: 4/5;
+		object-fit: contain;
 
 		/* bottom is parent width divided by 2 */
-		bottom: 10%;
+		bottom: 5%;
 
 		left: 50%;
 		transform: translate(-50%, 0);
@@ -125,24 +121,16 @@
 	}
 
 	.text-wrapper {
-		width: 43%;
 		position: absolute;
-		right: 10%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.text-wrapper .wish {
-		width: 100%;
-		text-align: center;
-		overflow-wrap: break-word;
-		text-align: left;
-	}
-	h2 {
-		color: var(--safetybox-yellow);
+		right: calc(20% - 6em);
+		width: 25em;
+
+		color: var(--soft-white);
+		font-family: 'Arial Nova Cond Light';
+		text-transform: uppercase;
+		font-size: 1.4em;
 	}
 	h3 {
-		color: var(--safetybox-yellow);
+		font-style: italic;
 	}
 </style>

@@ -26,6 +26,7 @@
 	});
 
 	$: is_answered = current_question == -1 ? true : quiz[current_question].user_selected != null;
+	$: is_button_active = is_answered || is_greeting;
 	$: console.log(is_answered);
 
 	let button_text = 'Продолжить';
@@ -60,7 +61,7 @@
 		</div>
 		<slot />
 		<div id="footer">
-			<Button text={button_text} size="1.6" onClick={handleButtonClick} active={is_answered} />
+			<Button text={button_text} size="1.6" onClick={handleButtonClick} active={is_button_active} />
 		</div>
 	</div>
 </section>
