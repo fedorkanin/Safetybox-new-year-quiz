@@ -1,0 +1,39 @@
+:root{
+		--safetybox-yellow: #f4b65c;
+		--safetybox-yellow-hover: #ffc56d;
+        --red-background: linear-gradient(120deg, #962f32, #420604);
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    font-family: 'Helvetica', sans-serif
+}
+
+h2, h3, p, a{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1em;
+}
+
+
+
