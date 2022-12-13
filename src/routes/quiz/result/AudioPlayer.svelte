@@ -1,7 +1,6 @@
 <script>
 	import { quiz_array } from '/src/routes/stores/QuizQuestions.js';
 	import patephone from '$lib/images/patephone.svg';
-	import { onMount } from 'svelte';
 
 	const glob_import = import.meta.glob('$lib/music/*.mp3', { eager: true });
 
@@ -41,11 +40,9 @@
 	}
 </script>
 
-<section>
-	<button on:click={handlePlay}>
-		<img src={patephone} alt="" class:playing={is_playing} />
-	</button>
-</section>
+<button on:click={handlePlay}>
+	<img src={patephone} alt="" class:playing={is_playing} />
+</button>
 
 <style>
 	button {
@@ -53,10 +50,12 @@
 		border: none;
 		cursor: pointer;
 		border-radius: 50%;
+		height: 100%;
+		width: fit-content;
 	}
 	img {
-		width: 9rem;
-		height: auto;
+		height: 100%;
+		width: auto;
 	}
 	.playing {
 		animation: sway 1.6s linear infinite;

@@ -19,14 +19,9 @@
 	}
 	@media only screen and (max-width: 600px) {
 		section {
-			color: var(--safetybox-yellow);
 			flex-direction: column;
-			align-items: center;
-			margin: auto;
+			justify-content: flex-start;
 			width: 80%;
-		}
-		h2 {
-			margin: 2rem 0 2rem 0;
 		}
 	}
 </style>

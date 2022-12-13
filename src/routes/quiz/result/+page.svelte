@@ -2,6 +2,8 @@
 	// redirect to main page in any case
 	import { quiz_array } from '/src/routes/stores/QuizQuestions.js';
 	import AudioPlayer from './AudioPlayer.svelte';
+	import decoration from '/src/static/graphics/hanging_garland.svg';
+	import Star from '$lib/Star.svelte';
 
 	// check quiz_array validity, if not valid, redirect to main page
 	// check that every user_selected value is not null
@@ -44,6 +46,12 @@
 
 <!-- print user selected values -->
 <section>
+	<div id="decoration">
+		<img src={decoration} alt="" />
+	</div>
+	<Star left="10" top="10" />
+	<Star right="10" top="20" />
+	<Star left="20" top="40" />
 	<div class="hanging-boxes">
 		{#each urls_array as image}
 			<div class="box-wrapper">
@@ -53,14 +61,14 @@
 		{/each}
 	</div>
 
-	<div class="text-wrapper">
-		<h2>Поздравляем!</h2>
+	<div id="text-wrapper">
+		<h1>Поздравляем!</h1>
 		<h2>Вы успешно прошли курс на новогоднее настроение! Желаем вам сохранять его весь год!</h2>
 		<h3>Ваша команда SafetyBox</h3>
-	</div>
-
-	<div id="audio">
-		<AudioPlayer />
+		<div id="audio">
+			<h3>Нажмите на картинку, чтобы вкюлчить звук!</h3>
+			<AudioPlayer />
+		</div>
 	</div>
 </section>
 
@@ -69,6 +77,19 @@
 		width: 100%;
 		height: 100%;
 		margin: 0;
+	}
+	#decoration {
+		position: absolute;
+		height: 100%;
+		width: auto;
+		z-index: 0;
+		top: 0;
+		left: 5%;
+		opacity: 40%;
+	}
+	#decoration img {
+		height: 100%;
+		width: auto;
 	}
 	#audio {
 		position: absolute;
@@ -107,8 +128,8 @@
 	}
 	.hanging-image {
 		position: absolute;
-		width: 60%;
-		aspect-ratio: 4/5;
+		width: 50%;
+		aspect-ratio: 2/3;
 		object-fit: contain;
 
 		/* bottom is parent width divided by 2 */
@@ -119,8 +140,7 @@
 
 		border-radius: 50%;
 	}
-
-	.text-wrapper {
+	#text-wrapper {
 		position: absolute;
 		right: calc(20% - 6em);
 		width: 25em;
@@ -129,8 +149,77 @@
 		font-family: 'Arial Nova Cond Light';
 		text-transform: uppercase;
 		font-size: 1.4em;
+		height: 100%;
 	}
 	h3 {
 		font-style: italic;
+	}
+	#text-wrapper h1 {
+		font-size: 2.6em;
+	}
+	#audio {
+		left: 0;
+		bottom: 0;
+		height: 30%;
+		width: 100%;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		color: var(--soft-white);
+	}
+	#audio h3 {
+		font-size: 1em;
+		font-style: normal;
+		width: 50%;
+		text-align: left;
+		font-weight: 300;
+	}
+
+	@media only screen and (max-width: 600px) {
+		/* reset styles */
+		#decoration {
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: auto;
+		}
+		#decoration img {
+			width: 100%;
+			height: auto;
+		}
+		.hanging-boxes .box-wrapper {
+			left: auto;
+			top: auto;
+		}
+		.box-wrapper {
+			width: 10em;
+		}
+		.box-wrapper:nth-child(1) {
+			right: 20px;
+			top: -30px;
+		}
+		.box-wrapper:nth-child(2) {
+			left: 50%;
+			transform: translate(-50%, 0);
+			top: -180px;
+		}
+		.box-wrapper:nth-child(3) {
+			left: 10px;
+			top: -90px;
+		}
+		#text-wrapper {
+			font-size: 1em;
+			width: 90%;
+			left: 50%;
+			height: 55%;
+			transform: translate(-50%, 80%);
+			text-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.5);
+		}
+		#audio {
+			width: 100%;
+			align-items: flex-end;
+		}
 	}
 </style>

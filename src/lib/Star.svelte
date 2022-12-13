@@ -4,10 +4,10 @@
 	export let right = NaN; // right in %
 	export let top = NaN; // top in %
 	export let bottom = NaN; // bottom in %
-	export let rotate = 0; // rotate in deg
+	export let rotate = Math.random() * 360; // rotate in deg
 	export let translate_x = 0; // translateX in %
 	export let translate_y = 0; // translateY in %
-	export let hide = false; // hide star
+	export let hide_on_mobile = false; // hide star
 	import star from '$lib/assets_new/star2.png';
 
 	let horizontal_style = '';
@@ -39,8 +39,8 @@
     {horizontal_style}
     {vertical_style}
     transform: translate({translate_x}%, {translate_y}%) rotate({rotate}deg); 
-    animation-delay: {animation_delay}s; 
-    {hide ? 'display: none;' : ''}"
+    animation-delay: {animation_delay}s; "
+	class:hide_on_mobile
 />
 
 <style>
@@ -60,6 +60,12 @@
 	@keyframes blinker {
 		50% {
 			opacity: 50%;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.hide_on_mobile {
+			display: none;
 		}
 	}
 </style>

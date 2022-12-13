@@ -1,8 +1,6 @@
 <!-- redirect to main page -->
 <script>
-	// import { sidebarBackgroundStore } from 'src/routes/stores/LeftDecorationBackground.js';
 	import { current_question_index } from '/src/routes/stores/QuizQuestions.js';
-	import { leftDecorationBackgroundStore } from '/src/routes/stores/LeftDecorationBackground.js';
 	import { quiz_array } from '/src/routes/stores/QuizQuestions.js';
 	import { goto } from '$app/navigation';
 	import Button from '../../lib/Button.svelte';
@@ -40,7 +38,6 @@
 
 	function handleButtonClick() {
 		if (is_greeting) {
-			leftDecorationBackgroundStore.set(false);
 			current_question_index.set(0);
 			goto('/quiz/main');
 		} else if (current_question === quiz.length - 1) {
@@ -53,7 +50,7 @@
 	}
 </script>
 
-<section class:all-background={is_greeting}>
+<section>
 	<Sidebar background={is_greeting} />
 	<div class="main_content" class:height-fit-content={current_question === 4}>
 		<div id="header">
@@ -75,7 +72,6 @@
 		padding: 0;
 		overflow: hidden;
 	}
-
 	section {
 		display: flex;
 		flex-direction: row;
@@ -108,24 +104,22 @@
 	@media only screen and (max-width: 600px) {
 		section {
 			flex-direction: column;
-			margin: 0;
-		}
-		.main_content {
-			height: 70vh;
-			margin: 0;
-		}
-		.all-background {
-			background: linear-gradient(120deg, #962f32, #420604);
-		}
-		.main_content {
-			flex-direction: column;
+			justify-content: flex-start;
 			align-items: flex-start;
 		}
-		.height-fit-content {
-			height: fit-content;
+		#header {
+			height: 10%;
+			font-size: 1.2rem;
 		}
-		:global(body) {
-			overflow: visible;
+		#footer {
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translate(-50%, 0);
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 </style>

@@ -2,7 +2,6 @@
 	import Radio from './Radio.svelte';
 	import { quiz_array } from '/src/routes/stores/QuizQuestions.js';
 	import { current_question_index } from '/src/routes/stores/QuizQuestions.js';
-	import { leftDecorationBackgroundStore } from '/src/routes/stores/LeftDecorationBackground';
 
 	// import stores
 	let current_question;
@@ -14,13 +13,6 @@
 	quiz_array.subscribe((value) => {
 		quiz = value;
 	});
-
-	let leftDecorationBackground;
-	leftDecorationBackgroundStore.subscribe((value) => {
-		leftDecorationBackground = value;
-	});
-
-	leftDecorationBackgroundStore.set(0);
 
 	function handleRadioChange(event) {
 		quiz_array.update((value) => {
@@ -71,8 +63,8 @@
 			margin-left: 0;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
-			justify-content: center;
+			align-items: flex-start;
+			justify-content: flex-start;
 			height: 100%;
 		}
 	}
