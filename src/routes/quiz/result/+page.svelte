@@ -57,7 +57,7 @@
 	<Star left="20" top="40" />
 	<Star right="30" top="70" {hide_on_mobile} />
 	<Star right="60" top="35" {hide_on_mobile} />
-	<div class="hanging-boxes">
+	<div id="hanging-boxes">
 		{#each urls_array as image}
 			<div class="box-wrapper">
 				<img class="hanging-box" src="/src/static/graphics/hanging_box.svg" alt="" />
@@ -67,8 +67,11 @@
 	</div>
 
 	<div id="text-wrapper">
-		<h1>Поздравляем!</h1>
-		<h2>Вы успешно прошли курс на новогоднее настроение! Желаем вам сохранять его весь год!</h2>
+		<h2>Поздравляем!</h2>
+		<h2>
+			Вы взяли верный курс на Новый год! Желаем, чтобы вас не покидало хорошее настроение и все
+			мечты сбывались!
+		</h2>
 		<h3>Ваша команда SafetyBox</h3>
 		<div id="audio">
 			<h3>Нажмите на картинку, чтобы вкюлчить звук!</h3>
@@ -82,6 +85,8 @@
 		width: 100%;
 		height: 100%;
 		margin: 0;
+		display: flex;
+		flex-direction: row;
 	}
 	#darken {
 		position: absolute;
@@ -103,35 +108,32 @@
 		height: 100%;
 		width: auto;
 	}
-	#audio {
-		position: absolute;
-		bottom: 5rem;
-		right: 5rem;
-	}
-	.hanging-boxes {
-		width: 100%;
+	#hanging-boxes {
 		height: 100%;
-		position: absolute;
+		width: 50%;
+		position: relative;
 	}
 	.box-wrapper {
 		position: absolute;
 		width: 20em;
+		width: 40%;
 		height: auto;
+		top: 0;
 
 		/* create soft gold glow effect */
 		filter: drop-shadow(0 0 7em #f9d56e);
 	}
 	.box-wrapper:nth-child(1) {
-		top: -20%;
-		left: 3%;
+		left: 2%;
+		transform: translate(0, -30%);
 	}
 	.box-wrapper:nth-child(2) {
-		top: -50%;
-		left: 15%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 	.box-wrapper:nth-child(3) {
-		top: -5%;
-		left: 27%;
+		right: 10%;
+		transform: translate(0, -10%);
 	}
 
 	.hanging-box {
@@ -154,9 +156,9 @@
 	}
 	#text-wrapper {
 		position: absolute;
-		right: calc(20% - 6em);
+		right: calc(15% - 6em);
 		/* width: 25em; */
-		width: 40%;
+		width: 45%;
 		color: var(--soft-white);
 		font-family: 'Arial Nova Cond Light';
 		text-transform: uppercase;
@@ -165,9 +167,6 @@
 	}
 	h3 {
 		font-style: italic;
-	}
-	#text-wrapper h1 {
-		font-size: 2.6em;
 	}
 	#audio {
 		left: 0;
@@ -190,7 +189,10 @@
 	}
 
 	@media only screen and (max-width: 800px) {
-		/* reset styles */
+		section {
+			flex-direction: column;
+			align-items: center;
+		}
 		#decoration {
 			left: 0;
 			top: 0;
@@ -201,37 +203,36 @@
 			width: 100%;
 			height: auto;
 		}
-		.hanging-boxes .box-wrapper {
-			left: auto;
-			top: auto;
+		#hanging-boxes {
+			width: 100%;
+			height: 70%;
+			max-height: 16em;
 		}
 		.box-wrapper {
 			width: 10em;
 		}
-		.box-wrapper:nth-child(1) {
-			right: 20px;
-			top: -30px;
-		}
-		.box-wrapper:nth-child(2) {
-			left: 50%;
-			transform: translate(-50%, 0);
-			top: -180px;
-		}
 		.box-wrapper:nth-child(3) {
-			left: 10px;
-			top: -90px;
+			transform: translate(0, -20%);
+			right: 2%;
 		}
 		#text-wrapper {
 			font-size: 1em;
 			width: 90%;
-			left: 50%;
-			height: 55%;
-			transform: translate(-50%, 80%);
+			position: relative;
+			right: auto;
 			text-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.5);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 		#audio {
+			position: relative;
+			left: auto;
+			right: auto;
+			bottom: auto;
 			width: 100%;
-			align-items: flex-end;
+			height: 25%;
+			transform: translateY(-20%);
 		}
 	}
 </style>

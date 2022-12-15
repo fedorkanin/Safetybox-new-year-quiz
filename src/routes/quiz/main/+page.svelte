@@ -26,11 +26,6 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Quiz</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
-
 <section>
 	<div class="wrapper">
 		<h2>

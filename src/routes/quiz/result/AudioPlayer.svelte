@@ -55,7 +55,7 @@
 	}
 	img {
 		height: 100%;
-		width: auto;
+		width: 100%;
 	}
 	.playing {
 		animation: sway 1.6s linear infinite;

@@ -4,7 +4,6 @@
 
 <div class="sidebar" class:gradient-background={background}>
 	<img src="/src/static/graphics/hanging_with_decoration.svg" alt="" />
-	<h3>Курс на новогоднее настроение</h3>
 </div>
 
 <style>
@@ -21,18 +20,6 @@
 		left: 50%;
 		transform: translate(-50%, 0);
 	}
-
-	.sidebar h3 {
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%, 0);
-		min-width: 10em;
-		bottom: 2em;
-		text-align: left;
-		color: #f3b65b;
-		font-size: 1rem;
-	}
-
 	.gradient-background {
 		background: linear-gradient(120deg, #962f32, #420604);
 	}
@@ -47,9 +34,6 @@
 			top: auto;
 			bottom: 10%;
 			height: 300%;
-		}
-		h3 {
-			display: none;
 		}
 		.gradient-background {
 			background: none;
