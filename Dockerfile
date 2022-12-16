@@ -14,4 +14,6 @@ COPY --from=build-node --chown=node:node /app/build ./build
 COPY --from=build-node --chown=node:node /app/package.json ./package.json
 ENV PORT 3000
 EXPOSE 3000
-CMD [ "node", "build" ]
+CMD [ "node", "build/index.js" ]
+
+

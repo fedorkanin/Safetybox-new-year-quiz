@@ -50,7 +50,7 @@
 </script>
 
 <section>
-	<Sidebar background={is_greeting} />
+	<Sidebar background={false} />
 	<div class="main_content" class:height-fit-content={current_question === 4}>
 		<div id="header">
 			<QuestonCounter />

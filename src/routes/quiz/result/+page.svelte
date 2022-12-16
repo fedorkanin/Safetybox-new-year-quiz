@@ -17,7 +17,7 @@
 	});
 
 	//import all photos from static/images
-	const glob_import = import.meta.glob('$lib/images/*.png', { eager: true });
+	const glob_import = import.meta.glob('$lib/images_compressed/*.png', { eager: true });
 
 	// subscribe to store
 	let quiz;
@@ -74,7 +74,7 @@
 		</h2>
 		<h3>Ваша команда SafetyBox</h3>
 		<div id="audio">
-			<h3>Нажмите на картинку, чтобы вкюлчить звук!</h3>
+			<h3>Нажмите на граммофон, чтобы включить звук!</h3>
 			<AudioPlayer />
 		</div>
 	</div>
@@ -146,7 +146,6 @@
 		aspect-ratio: 2/3;
 		object-fit: contain;
 
-		/* bottom is parent width divided by 2 */
 		bottom: 5%;
 
 		left: 50%;
@@ -161,11 +160,13 @@
 		width: 45%;
 		color: var(--soft-white);
 		font-family: 'Arial Nova Cond Light';
-		text-transform: uppercase;
 		font-size: 1.4em;
 		height: 100%;
 	}
-	h3 {
+	#text-wrapper h2 {
+		text-transform: uppercase;
+	}
+	#text-wrapper h3 {
 		font-style: italic;
 	}
 	#audio {
@@ -182,7 +183,7 @@
 	}
 	#audio h3 {
 		font-size: 1em;
-		font-style: normal;
+		/* font-style: normal; */
 		width: 50%;
 		text-align: left;
 		font-weight: 300;
@@ -207,6 +208,7 @@
 			width: 100%;
 			height: 70%;
 			max-height: 16em;
+			flex-shrink: 0;
 		}
 		.box-wrapper {
 			width: 10em;
@@ -223,7 +225,7 @@
 			text-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.5);
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: flex-start;
 		}
 		#audio {
 			position: relative;
@@ -231,7 +233,7 @@
 			right: auto;
 			bottom: auto;
 			width: 100%;
-			height: 25%;
+			height: 20%;
 			transform: translateY(-20%);
 		}
 	}

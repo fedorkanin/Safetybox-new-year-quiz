@@ -49,7 +49,6 @@
 		background: none;
 		border: none;
 		cursor: pointer;
-		border-radius: 50%;
 		height: 100%;
 		width: fit-content;
 	}
