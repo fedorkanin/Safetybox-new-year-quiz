@@ -57,7 +57,7 @@
 		font-weight: 600;
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 900px) {
 		button {
 			display: none;
 		}

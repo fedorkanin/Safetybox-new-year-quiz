@@ -5,3 +5,6 @@
 <section>
 	<Curtain />
 </section>
+
+<style>
+</style>

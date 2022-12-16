@@ -8,7 +8,7 @@
 	export let translate_x = 0; // translateX in %
 	export let translate_y = 0; // translateY in %
 	export let hide_on_mobile = false; // hide star
-	import star from '$lib/assets_new/star2.png';
+	import star from '$lib/assets_new/star_good_bg.png';
 
 	let horizontal_style = '';
 	$: if (!isNaN(left)) {
@@ -54,7 +54,7 @@
 
 		filter: drop-shadow(0 0 0.5rem rgb(254, 204, 78));
 
-		mix-blend-mode: screen;
+		/* mix-blend-mode: screen; */
 	}
 	/* animation star blinker */
 	@keyframes blinker {
@@ -63,7 +63,7 @@
 		}
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 900px) {
 		.hide_on_mobile {
 			display: none;
 		}

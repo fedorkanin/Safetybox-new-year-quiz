@@ -67,12 +67,14 @@
 	</div>
 
 	<div id="text-wrapper">
-		<h2>Поздравляем!</h2>
-		<h2>
-			Вы взяли верный курс на Новый год! Желаем, чтобы вас не покидало хорошее настроение и все
-			мечты сбывались!
-		</h2>
-		<h3>Ваша команда SafetyBox</h3>
+		<div class="text">
+			<h2>Поздравляем!</h2>
+			<h2>
+				Вы&nbsp;взяли верный курс на&nbsp;Новый год! Желаем, чтобы вас не&nbsp;покидало хорошее
+				настроение и&nbsp;все мечты сбывались!
+			</h2>
+			<h3>Ваша команда SafetyBox</h3>
+		</div>
 		<div id="audio">
 			<h3>Нажмите на граммофон, чтобы включить звук!</h3>
 			<AudioPlayer />
@@ -156,12 +158,15 @@
 	#text-wrapper {
 		position: absolute;
 		right: calc(15% - 6em);
-		/* width: 25em; */
 		width: 45%;
 		color: var(--soft-white);
 		font-family: 'Arial Nova Cond Light';
 		font-size: 1.4em;
 		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 	}
 	#text-wrapper h2 {
 		text-transform: uppercase;
@@ -172,9 +177,7 @@
 	#audio {
 		left: 0;
 		bottom: 0;
-		height: 30%;
 		width: 100%;
-		margin-bottom: 20px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -189,7 +192,7 @@
 		font-weight: 300;
 	}
 
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 900px) {
 		section {
 			flex-direction: column;
 			align-items: center;

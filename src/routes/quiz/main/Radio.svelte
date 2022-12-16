@@ -159,6 +159,6 @@
 		border-radius: 50%;
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 900px) {
 	}
 </style>

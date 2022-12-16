@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 111.42 111.42">
+  <defs>
+    <style>
+      .g {
+        fill: url(#e);
+      }
+
+      .g, .h, .i {
+        mix-blend-mode: screen;
+      }
+
+      .h {
+        fill: url(#d);
+      }
+
+      .i {
+        fill: url(#f);
+      }
+
+      .j {
+        isolation: isolate;
+      }
+    </style>
+    <radialGradient id="d" cx="1426.96" cy="6992" fx="1426.96" fy="6992" r="55.71" gradientTransform="translate(-3663.41 6146.04) rotate(-137.05)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#fdfaf7"/>
+      <stop offset=".02" stop-color="#f8eee1"/>
+      <stop offset=".04" stop-color="#efdabe"/>
+      <stop offset=".06" stop-color="#e4bf8e"/>
+      <stop offset=".07" stop-color="#daa762"/>
+      <stop offset=".16" stop-color="#daa762"/>
+      <stop offset=".18" stop-color="#daa762" stop-opacity=".95"/>
+      <stop offset=".26" stop-color="#daa762" stop-opacity=".73"/>
+      <stop offset=".34" stop-color="#daa762" stop-opacity=".54"/>
+      <stop offset=".43" stop-color="#daa762" stop-opacity=".37"/>
+      <stop offset=".52" stop-color="#daa762" stop-opacity=".24"/>
+      <stop offset=".62" stop-color="#daa762" stop-opacity=".13"/>
+      <stop offset=".72" stop-color="#daa762" stop-opacity=".06"/>
+      <stop offset=".84" stop-color="#daa762" stop-opacity=".01"/>
+      <stop offset="1" stop-color="#daa762" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="e" cx="19057.93" cy="5205.43" fx="19057.93" fy="5205.43" r="33.68" gradientTransform="translate(-7662.43 -5175.12) rotate(-47.05) scale(.08 1.77) skewX(.01)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".03" stop-color="#fdfaf7"/>
+      <stop offset=".08" stop-color="#f8eee1"/>
+      <stop offset=".14" stop-color="#efdabe"/>
+      <stop offset=".2" stop-color="#e4bf8e"/>
+      <stop offset=".25" stop-color="#daa762"/>
+      <stop offset=".31" stop-color="#daa762"/>
+      <stop offset=".32" stop-color="#daa762" stop-opacity=".97"/>
+      <stop offset=".39" stop-color="#daa762" stop-opacity=".74"/>
+      <stop offset=".46" stop-color="#daa762" stop-opacity=".54"/>
+      <stop offset=".53" stop-color="#daa762" stop-opacity=".38"/>
+      <stop offset=".61" stop-color="#daa762" stop-opacity=".24"/>
+      <stop offset=".69" stop-color="#daa762" stop-opacity=".13"/>
+      <stop offset=".78" stop-color="#daa762" stop-opacity=".06"/>
+      <stop offset=".87" stop-color="#daa762" stop-opacity=".01"/>
+      <stop offset="1" stop-color="#daa762" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="f" cx="-9349.94" cy="4829.69" fx="-9349.94" fy="4829.69" r="33.67" gradientTransform="translate(6393.03 -5723.73) rotate(42.95) scale(.08 1.77) skewX(.01)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".03" stop-color="#fdfaf7"/>
+      <stop offset=".08" stop-color="#f8eee1"/>
+      <stop offset=".13" stop-color="#efdabe"/>
+      <stop offset=".2" stop-color="#e4bf8e"/>
+      <stop offset=".25" stop-color="#daa762"/>
+      <stop offset=".31" stop-color="#daa762"/>
+      <stop offset=".32" stop-color="#daa762" stop-opacity=".97"/>
+      <stop offset=".39" stop-color="#daa762" stop-opacity=".74"/>
+      <stop offset=".46" stop-color="#daa762" stop-opacity=".54"/>
+      <stop offset=".53" stop-color="#daa762" stop-opacity=".38"/>
+      <stop offset=".61" stop-color="#daa762" stop-opacity=".24"/>
+      <stop offset=".69" stop-color="#daa762" stop-opacity=".13"/>
+      <stop offset=".78" stop-color="#daa762" stop-opacity=".06"/>
+      <stop offset=".87" stop-color="#daa762" stop-opacity=".01"/>
+      <stop offset="1" stop-color="#daa762" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g class="j">
+    <g id="b" data-name="Layer 2">
+      <g id="c" data-name="Слой 9">
+        <path class="h" d="M14.93,17.76C35.89-4.77,71.14-6.03,93.66,14.93c22.52,20.96,23.79,56.21,2.83,78.73-20.96,22.52-56.21,23.79-78.74,2.83C-4.77,75.53-6.03,40.28,14.93,17.76Z"/>
+        <path class="g" d="M57.32,53.98c24.09,22.42,42.85,41.43,41.9,42.45-.95,1.02-21.25-16.33-45.35-38.75C29.78,35.26,11.02,16.25,11.97,15.23c.95-1.02,21.25,16.33,45.34,38.75Z"/>
+        <path class="i" d="M57.45,57.55c-22.42,24.09-41.43,42.85-42.45,41.9-1.02-.95,16.33-21.25,38.75-45.34C76.17,30.02,95.18,11.26,96.2,12.21c1.02,.95-16.33,21.25-38.75,45.35Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

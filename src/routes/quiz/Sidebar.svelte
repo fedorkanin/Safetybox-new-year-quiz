@@ -18,13 +18,13 @@
 		position: absolute;
 		width: 85%;
 		left: 50%;
-		transform: translate(-50%, 0);
+		transform: translate(-50%, -1%);
 	}
 	.gradient-background {
 		background: linear-gradient(120deg, #962f32, #420604);
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 900px) {
 		.sidebar {
 			height: 30%;
 			max-width: 100%;

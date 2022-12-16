@@ -7,8 +7,9 @@
 
 <section>
 	<h1>
-		Ответьте на 4 вопроса, чтобы определить правильный курс<br />на
-		<span style="color: var(--safetybox-yellow);">Новый Год!</span>
+		Ответьте на&nbsp;4&nbsp;вопроса, чтобы определить правильный курс на&nbsp;<span
+			style="color: var(--safetybox-yellow);">Новый Год!</span
+		>
 	</h1>
 </section>
 
@@ -23,7 +24,7 @@
 		font-weight: 500;
 		font-size: 3.5em;
 	}
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 900px) {
 		section {
 			flex-direction: column;
 			justify-content: flex-start;

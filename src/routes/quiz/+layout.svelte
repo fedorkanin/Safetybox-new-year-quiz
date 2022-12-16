@@ -96,11 +96,11 @@
 	}
 	#footer {
 		margin-top: auto;
-		margin-bottom: 5%;
+		margin-bottom: 7%;
 		width: 100%;
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 900px) {
 		section {
 			flex-direction: column;
 			justify-content: flex-start;
@@ -119,6 +119,7 @@
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
+			margin-bottom: 15%;
 		}
 	}
 </style>

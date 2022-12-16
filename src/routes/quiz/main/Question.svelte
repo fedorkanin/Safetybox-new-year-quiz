@@ -12,7 +12,7 @@
 		text-align: left;
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 900px) {
 		h1 {
 			margin: 1rem 0;
 		}

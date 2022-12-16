@@ -49,11 +49,10 @@
 		background: none;
 		border: none;
 		cursor: pointer;
-		height: 100%;
-		width: fit-content;
+		width: 5em;
+		height: 7em;
 	}
 	img {
-		height: 100%;
 		width: 100%;
 	}
 	.playing {

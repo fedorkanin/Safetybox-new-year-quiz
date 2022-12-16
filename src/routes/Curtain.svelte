@@ -15,7 +15,7 @@
 	<div id="box-with-stars">
 		<Star size="10" right="22" bottom="40" rotate="-15" />
 		<Star size="10" left="0" bottom="0" rotate="0" />
-		<img id="box" src="/src/static/graphics/welcome_hanging_box.svg" alt="" />
+		<img id="box" src="/src/static/graphics/hanging-box-slide1.svg" alt="" />
 	</div>
 	<div class="container">
 		<h1>Курс<br />на новогоднее настроение</h1>
@@ -41,7 +41,8 @@
 	}
 	.container {
 		position: absolute;
-		right: calc(20% - 12rem);
+		/* right: calc(20% - 12rem); */
+		left: 60%;
 		height: 90%;
 		max-width: 30rem;
 		width: fit-content;
@@ -56,14 +57,15 @@
 		position: absolute;
 		max-height: 90%;
 		max-width: 90%;
-		top: 0;
+		top: -2%;
 		left: 5%;
 	}
 	#box-with-stars {
 		position: absolute;
-		height: 60%;
-		width: auto;
-		right: 47%;
+		left: 38%;
+		width: 12em;
+		top: 37%;
+		transform: translateY(-83.5%);
 		z-index: 1;
 	}
 	#box {
@@ -72,27 +74,30 @@
 		mix-blend-mode: normal;
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 1200px) {
+		.garland {
+			height: 70%;
+		}
+	}
+
+	@media (max-width: 900px) {
 		section {
 			display: flex;
-			flex-direction: column;
 			justify-content: center;
-			align-items: center;
-			justify-content: flex-end;
 		}
 		.container {
 			position: relative;
-			top: auto;
+			top: 50%;
 			right: auto;
+			left: auto;
 			height: fit-content;
 			transform: none;
 			align-items: center;
-			margin-bottom: 2rem;
 		}
 		h1 {
 			font-size: 3em;
 			text-align: center;
-			margin-bottom: 6rem;
+			margin-bottom: 1em;
 		}
 		.garland {
 			height: 50%;
@@ -102,10 +107,20 @@
 			top: -5%;
 		}
 		#box-with-stars {
-			height: 50%;
-			top: -10%;
-			right: 50%;
-			transform: translateX(50%);
+			top: -30%;
+			left: 50%;
+			transform: translateX(-50%);
+
+			display: flex;
+			justify-content: center;
+		}
+	}
+	@media screen and (max-width: 400px) and (max-height: 700px) {
+		h1 {
+			font-size: 2em;
+		}
+		#box-with-stars {
+			top: -50%;
 		}
 	}
 </style>
