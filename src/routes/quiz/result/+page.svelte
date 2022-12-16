@@ -55,7 +55,7 @@
 	<Star left="10" top="10" />
 	<Star right="10" top="20" />
 	<Star left="20" top="40" />
-	<Star right="30" top="70" {hide_on_mobile} />
+	<Star right="13" top="70" {hide_on_mobile} />
 	<Star right="60" top="35" {hide_on_mobile} />
 	<div id="hanging-boxes">
 		{#each urls_array as image}
@@ -73,7 +73,7 @@
 				Вы&nbsp;взяли верный курс на&nbsp;Новый год! Желаем, чтобы вас не&nbsp;покидало хорошее
 				настроение и&nbsp;все мечты сбывались!
 			</h2>
-			<h3>Ваша команда SafetyBox</h3>
+			<h3>Ваша команда <a href="https://safetybox.ru">SafetyBox</a></h3>
 		</div>
 		<div id="audio">
 			<h3>Нажмите на граммофон, чтобы включить звук!</h3>
@@ -83,6 +83,10 @@
 </section>
 
 <style>
+	a {
+		text-decoration: underline;
+		color: var(--soft-white);
+	}
 	section {
 		width: 100%;
 		height: 100%;
