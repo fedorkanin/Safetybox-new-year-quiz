@@ -70,13 +70,17 @@
 		<div class="text">
 			<h2>Поздравляем!</h2>
 			<h2>
-				Вы&nbsp;взяли верный курс на&nbsp;Новый год! Желаем, чтобы вас не&nbsp;покидало хорошее
+				Вы&nbsp;взяли верный курс на&nbsp;Новый Год! Желаем, чтобы вас не&nbsp;покидало хорошее
 				настроение и&nbsp;все мечты сбывались!
 			</h2>
-			<h3>Ваша команда <a href="https://safetybox.ru">SafetyBox</a></h3>
+			<h3>
+				Ваша команда <a href="https://safetybox.ru" rel="noopener noreferrer" target="_blank"
+					>SafetyBox</a
+				>
+			</h3>
 		</div>
 		<div id="audio">
-			<h3>Нажмите на граммофон, чтобы включить звук!</h3>
+			<h3>Нажмите на&nbsp;граммофон,<br />чтобы включить звук!</h3>
 			<AudioPlayer />
 		</div>
 	</div>
@@ -185,7 +189,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: flex-start;
 		color: var(--soft-white);
 	}
 	#audio h3 {
@@ -232,7 +236,7 @@
 			text-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.5);
 			display: flex;
 			flex-direction: column;
-			justify-content: flex-start;
+			justify-content: center;
 		}
 		#audio {
 			position: relative;
@@ -242,6 +246,7 @@
 			width: 100%;
 			height: 20%;
 			transform: translateY(-20%);
+			justify-content: space-between;
 		}
 	}
 </style>

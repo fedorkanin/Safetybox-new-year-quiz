@@ -69,8 +69,8 @@
 		z-index: 1;
 	}
 	#box {
-		height: 100%;
-		width: auto;
+		width: 100%;
+		height: auto;
 		mix-blend-mode: normal;
 	}
 

@@ -12,7 +12,7 @@ const quiz = [
 		user_selected: null
 	},
 	{
-		question: 'Кого бы вы хотели встретить в новый год?',
+		question: 'Кого бы вы хотели встретить в Новый Год?',
 		answers: [
 			{ value: 'Santa', label: 'Деда Мороза' },
 			{ value: 'Fairy', label: 'Волшебную фею' },
@@ -36,7 +36,7 @@ const quiz = [
 			{ value: 'let_it_snow', label: 'Let it snow!' },
 			{ value: 'elochka', label: 'В лесу родилась ёлочка' },
 			{ value: '5minutes', label: '5 минут... 5 минут...' },
-			{ value: 'avariya', label: 'Новый год к нам мчится! Скоро все случится!' }
+			{ value: 'avariya', label: 'Новый Год к нам мчится! Скоро все случится!' }
 		],
 		user_selected: null
 	}
