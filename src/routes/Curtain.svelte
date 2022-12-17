@@ -2,8 +2,6 @@
 	import Button from '$lib/Button.svelte';
 	import Star from '$lib/Star.svelte';
 
-	console.log(document.documentElement.clientWidth);
-
 	let hide_on_mobile = true;
 </script>
 
