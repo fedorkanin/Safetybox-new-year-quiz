@@ -35,7 +35,7 @@
 <img
 	src={star}
 	alt=""
-	style="width: {size}em; 
+	style="width: {size}rem; 
     {horizontal_style}
     {vertical_style}
     transform: translate({translate_x}%, {translate_y}%) rotate({rotate}deg); 

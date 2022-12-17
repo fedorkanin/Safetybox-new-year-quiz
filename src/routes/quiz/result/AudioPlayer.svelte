@@ -46,14 +46,19 @@
 
 <style>
 	button {
+		font-size: 100%;
+		padding: 0;
+		margin: 0;
 		background: none;
 		border: none;
 		cursor: pointer;
-		width: 7em;
-		height: 10em;
+		width: 3em;
+		height: 3em;
 	}
 	img {
-		width: 100%;
+		/* width: 100%; */
+		height: 100%;
+		width: auto;
 	}
 	.playing {
 		animation: sway 1.6s linear infinite;

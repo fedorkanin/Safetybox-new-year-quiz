@@ -2,6 +2,8 @@
 	import Button from '$lib/Button.svelte';
 	import Star from '$lib/Star.svelte';
 
+	console.log(document.documentElement.clientWidth);
+
 	let hide_on_mobile = true;
 </script>
 
@@ -18,7 +20,7 @@
 		<img id="box" src="/src/static/graphics/hanging-box-slide1.svg" alt="" />
 	</div>
 	<div class="container">
-		<h1>Курс<br />на новогоднее настроение</h1>
+		<h1>Курс на&nbsp;новогоднее настроение</h1>
 		<Button text="Начать" href="/quiz/greeting" size="2.3" />
 	</div>
 </section>

@@ -3,7 +3,7 @@
 </script>
 
 <section>
-	<div class="wrapper"><Button href="/" text="На главную" size="3" /></div>
+	<div class="wrapper"><Button href="/" text="На главную" size="2" /></div>
 </section>
 
 <style>

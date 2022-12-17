@@ -68,11 +68,11 @@
 
 	<div id="text-wrapper">
 		<div class="text">
-			<h2>Поздравляем!</h2>
-			<h2>
+			<h5>Поздравляем!</h5>
+			<h5>
 				Вы&nbsp;взяли верный курс на&nbsp;Новый Год! Желаем, чтобы вас не&nbsp;покидало хорошее
 				настроение и&nbsp;все мечты сбывались!
-			</h2>
+			</h5>
 			<h3>
 				Ваша команда <a href="https://safetybox.ru" rel="noopener noreferrer" target="_blank"
 					>SafetyBox</a
@@ -80,13 +80,17 @@
 			</h3>
 		</div>
 		<div id="audio">
-			<h3>Нажмите на&nbsp;граммофон,<br />чтобы включить звук!</h3>
+			<h3>Нажмите&nbsp;на&nbsp;граммофон,<br />чтобы включить звук!</h3>
 			<AudioPlayer />
 		</div>
 	</div>
 </section>
 
 <style>
+	h5 {
+		font-size: 1.3em;
+		text-transform: uppercase;
+	}
 	a {
 		text-decoration: underline;
 		color: var(--soft-white);
@@ -165,7 +169,8 @@
 	}
 	#text-wrapper {
 		position: absolute;
-		right: calc(15% - 6em);
+		/* right: calc(15% - 6em); */
+		left: 52%;
 		width: 45%;
 		color: var(--soft-white);
 		font-family: 'Arial Nova Cond Light';
@@ -175,9 +180,9 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 	}
-	#text-wrapper h2 {
+	/* #text-wrapper h2 {
 		text-transform: uppercase;
-	}
+	} */
 	#text-wrapper h3 {
 		font-style: italic;
 	}
@@ -194,7 +199,7 @@
 	#audio h3 {
 		font-size: 1em;
 		/* font-style: normal; */
-		width: 50%;
+		width: 10em;
 		text-align: left;
 		font-weight: 300;
 	}
@@ -221,7 +226,7 @@
 			flex-shrink: 0;
 		}
 		.box-wrapper {
-			width: 10em;
+			width: 39%;
 		}
 		.box-wrapper:nth-child(3) {
 			transform: translate(0, -20%);
@@ -231,6 +236,7 @@
 			font-size: 1em;
 			width: 90%;
 			position: relative;
+			left: auto;
 			right: auto;
 			text-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.5);
 			display: flex;

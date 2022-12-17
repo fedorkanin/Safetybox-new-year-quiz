@@ -85,7 +85,7 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-		padding-left: 8%;
+		padding-left: 5%;
 	}
 	#header {
 		height: 15%;

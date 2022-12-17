@@ -9,9 +9,9 @@
 <style>
 	.sidebar {
 		position: relative;
-		width: 30%;
-		max-width: 15rem;
-		height: 100vh;
+		width: 22%;
+		/* max-width: 12em; */
+		height: 100%;
 		overflow: hidden;
 	}
 	.sidebar img {
