@@ -105,9 +105,9 @@ p {
 }
 
 /* for IPhone SE */
-@media screen and (max-width: 400px) and (max-height: 700px) {
+@media screen and (max-width: 400px) and (max-height: 600px) {
 	body {
-		font-size: 100%;
+		font-size: 90%;
 	}
 }
 
