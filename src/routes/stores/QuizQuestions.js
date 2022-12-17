@@ -32,7 +32,7 @@ const quiz = [
 	{
 		question: 'Какая ваша любимая новогодняя песня?',
 		answers: [
-			{ value: 'magic_moments', label: 'Magic moments' },
+			// { value: 'magic_moments', label: 'Magic moments' },
 			{ value: 'let_it_snow', label: 'Let it snow!' },
 			{ value: 'elochka', label: 'В лесу родилась ёлочка' },
 			{ value: '5minutes', label: '5 минут... 5 минут...' },
