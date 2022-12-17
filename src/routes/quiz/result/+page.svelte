@@ -169,7 +169,6 @@
 		width: 45%;
 		color: var(--soft-white);
 		font-family: 'Arial Nova Cond Light';
-		font-size: 1.4em;
 		height: 100%;
 
 		display: flex;

@@ -1,83 +1,106 @@
-:root{
-		--safetybox-yellow: #f4b65c;
-		--safetybox-yellow-hover: #ffc56d;
-        --red-background: linear-gradient(120deg, #962f32, #420604);
-        --soft-white: #e9cf9f;
+:root {
+	--safetybox-yellow: #f4b65c;
+	--safetybox-yellow-hover: #ffc56d;
+	--red-background: linear-gradient(120deg, #962f32, #420604);
+	--soft-white: #e9cf9f;
 }
 
 @font-face {
-    font-family: 'Arial Nova Cond Light';
-    src: url('/Fonts/arial-nova-cond-light.ttf');
+	font-family: 'Arial Nova Cond Light';
+	src: url('/Fonts/arial-nova-cond-light.ttf');
 }
 
-html{
-    height: 100%;
-    overflow: hidden;
+html {
+	height: 100%;
+	overflow: hidden;
 }
 
-body{ 
-    font-family: 'Helvetica', sans-serif;
-    height: 100%;
-    overflow: hidden;
-    font-size: 100%;
+body {
+	font-family: 'Helvetica', sans-serif;
+	height: 100%;
+	overflow: hidden;
+	font-size: 100%;
 }
 
-h2, h3, p, a{
-    font-weight: 500;
+h2,
+h3,
+p,
+a {
+	font-weight: 500;
 }
 
-h1{
-    font-size: 3.5em;
-    font-weight: 800;
+h1 {
+	font-size: 3.5em;
+	font-weight: 800;
 }
 
-h2{
-    font-size: 2em;
-    font-weight: 600;
+h2 {
+	font-size: 2em;
+	font-weight: 600;
 }
 
-h3{
-    font-size: 1.5em;
+h3 {
+	font-size: 1.5em;
 }
 
-p{
-    font-size: 1em;
+p {
+	font-size: 1em;
 }
 
-
-@media screen and (max-width:1200px){
-body{font-size:95%;}
+@media screen and (max-width: 600px) {
+	body {
+		font-size: 90%;
+	}
 }
 
-@media screen and (max-width:1400px) and (min-width:1200px){
-body{font-size:100%;}
+@media screen and (max-width: 1000px) {
+	body {
+		font-size: 95%;
+	}
 }
 
-@media screen and (min-width:1400px){
-body{font-size:110%;}
+@media screen and (max-width: 1200px) {
+	body {
+		font-size: 110%;
+	}
 }
 
-@media screen and (max-width:600px){
-body{font-size:100%;}
+@media screen and (max-width: 1400px) {
+	body {
+		font-size: 120%;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	body {
+		font-size: 130%;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	body {
+		font-size: 140%;
+	}
 }
 
 @media only screen and (max-width: 900px) {
-    h1{
-        font-size: 2em;
-    }
-    h2{
-        font-size: 1.5em;
-    }
-    h3{
-        font-size: 1.2em;
-    }
-    p{
-        font-size: 1em;
-    }
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	h3 {
+		font-size: 1.2em;
+	}
+	p {
+		font-size: 1em;
+	}
 }
 
 /* for IPhone SE */
 @media screen and (max-width: 400px) and (max-height: 700px) {
-    body{font-size: 90%;}
+	body {
+		font-size: 90%;
+	}
 }
-

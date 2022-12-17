@@ -44,7 +44,7 @@
 		/* right: calc(20% - 12rem); */
 		left: 60%;
 		height: 90%;
-		max-width: 30rem;
+		max-width: 30em;
 		width: fit-content;
 		top: 50%;
 		transform: translateY(-50%);

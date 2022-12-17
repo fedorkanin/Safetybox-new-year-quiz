@@ -8,7 +8,7 @@
 <section>
 	<h1>
 		Ответьте на&nbsp;4&nbsp;вопроса, чтобы определить правильный курс на&nbsp;<span
-			style="color: var(--safetybox-yellow);">Новый Год!</span
+			style="color: var(--safetybox-yellow);">Новый&nbsp;Год!</span
 		>
 	</h1>
 </section>
