@@ -107,9 +107,9 @@
 			top: -5%;
 		}
 		#box-with-stars {
-			top: -30%;
+			transform: translate(-50%, -83.5%);
+			top: 30%;
 			left: 50%;
-			transform: translateX(-50%);
 
 			display: flex;
 			justify-content: center;
@@ -120,7 +120,13 @@
 			font-size: 2em;
 		}
 		#box-with-stars {
-			top: -50%;
+			width: 10em;
+			transform: translate(-50%, -83.5%);
+			top: 30%;
+			left: 50%;
+
+			display: flex;
+			justify-content: center;
 		}
 	}
 </style>
