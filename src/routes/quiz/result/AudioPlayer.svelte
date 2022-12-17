@@ -52,8 +52,9 @@
 		background: none;
 		border: none;
 		cursor: pointer;
-		width: 3em;
-		height: 3em;
+		width: 4em;
+		height: 6em;
+		margin-left: 1em;
 	}
 	img {
 		/* width: 100%; */
