@@ -249,8 +249,8 @@
 			right: auto;
 			bottom: auto;
 			width: 100%;
-			/* height: 20%; */
 			transform: translateY(-20%);
+			margin-top: 1em;
 		}
 	}
 </style>
