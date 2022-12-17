@@ -49,8 +49,8 @@
 		background: none;
 		border: none;
 		cursor: pointer;
-		width: 5em;
-		height: 7em;
+		width: 7em;
+		height: 10em;
 	}
 	img {
 		width: 100%;

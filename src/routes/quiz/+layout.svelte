@@ -119,7 +119,7 @@
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-			margin-bottom: 15%;
+			margin-bottom: 10%;
 		}
 	}
 </style>

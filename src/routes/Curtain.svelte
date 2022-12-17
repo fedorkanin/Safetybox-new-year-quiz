@@ -57,6 +57,7 @@
 		position: absolute;
 		max-height: 90%;
 		max-width: 90%;
+		width: fit-content;
 		top: -2%;
 		left: 5%;
 	}
@@ -87,6 +88,7 @@
 		}
 		.container {
 			position: relative;
+			width: 90%;
 			top: 50%;
 			right: auto;
 			left: auto;
@@ -116,9 +118,6 @@
 		}
 	}
 	@media screen and (max-width: 400px) and (max-height: 700px) {
-		h1 {
-			font-size: 2em;
-		}
 		#box-with-stars {
 			width: 10em;
 			transform: translate(-50%, -83.5%);

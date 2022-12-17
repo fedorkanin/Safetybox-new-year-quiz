@@ -76,3 +76,8 @@ body{font-size:100%;}
     }
 }
 
+/* for IPhone SE */
+@media screen and (max-width: 400px) and (max-height: 700px) {
+    body{font-size: 90%;}
+}
+

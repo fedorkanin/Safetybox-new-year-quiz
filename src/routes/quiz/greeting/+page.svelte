@@ -34,4 +34,9 @@
 			font-size: 2.5em;
 		}
 	}
+	@media screen and (max-width: 400px) and (max-height: 700px) {
+		h1 {
+			font-size: 2em;
+		}
+	}
 </style>
