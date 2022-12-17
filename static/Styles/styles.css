@@ -53,25 +53,19 @@ p {
 	}
 }
 
-@media screen and (max-width: 1000px) {
-	body {
-		font-size: 95%;
-	}
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
 	body {
 		font-size: 110%;
 	}
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
 	body {
 		font-size: 120%;
 	}
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
 	body {
 		font-size: 130%;
 	}
@@ -79,7 +73,7 @@ p {
 
 @media screen and (min-width: 1600px) {
 	body {
-		font-size: 140%;
+		font-size: 200%;
 	}
 }
 
