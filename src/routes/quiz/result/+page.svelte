@@ -88,8 +88,13 @@
 
 <style>
 	h5 {
-		font-size: 1.3em;
+		font-size: 1.5em;
 		text-transform: uppercase;
+	}
+	@media screen and (max-width: 1500px) {
+		h5 {
+			font-size: 2em;
+		}
 	}
 	a {
 		text-decoration: underline;

@@ -55,23 +55,35 @@ p {
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
 	body {
-		font-size: 110%;
+		font-size: 100%;
 	}
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
 	body {
-		font-size: 120%;
+		font-size: 100%;
 	}
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
 	body {
-		font-size: 130%;
+		font-size: 110%;
 	}
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+	body {
+		font-size: 140%;
+	}
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2400px) {
+	body {
+		font-size: 160%;
+	}
+}
+
+@media screen and (min-width: 2400px) {
 	body {
 		font-size: 180%;
 	}
