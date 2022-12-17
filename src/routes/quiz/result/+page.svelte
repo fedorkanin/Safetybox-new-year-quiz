@@ -88,13 +88,8 @@
 
 <style>
 	h5 {
-		font-size: 1.5em;
 		text-transform: uppercase;
-	}
-	@media screen and (max-width: 1500px) {
-		h5 {
-			font-size: 2em;
-		}
+		font-size: 1.5em;
 	}
 	a {
 		text-decoration: underline;
@@ -256,6 +251,27 @@
 			width: 100%;
 			transform: translateY(-20%);
 			margin-top: 1em;
+		}
+	}
+
+	@media only screen and (min-width: 1200px) {
+		:global(body) {
+			font-size: 120%;
+		}
+	}
+	@media only screen and (min-width: 1500px) {
+		:global(body) {
+			font-size: 140%;
+		}
+	}
+	@media only screen and (min-width: 1800px) {
+		:global(body) {
+			font-size: 150%;
+		}
+	}
+	@media only screen and (min-width: 2100px) {
+		:global(body) {
+			font-size: 160%;
 		}
 	}
 </style>
