@@ -38,6 +38,7 @@
 		text-transform: uppercase;
 		text-shadow: rgba(31, 23, 17, 0.5) 0.3rem 0.3rem 0.5rem;
 		width: fit-content;
+		font-size: 4em;
 	}
 	.container {
 		position: absolute;
