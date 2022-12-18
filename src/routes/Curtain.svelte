@@ -56,9 +56,10 @@
 
 	.garland {
 		position: absolute;
-		max-height: 90%;
-		max-width: 90%;
-		width: fit-content;
+		/* max-height: 90%; */
+		/* max-width: 90%; */
+		/* width: fit-content; */
+		height: 90%;
 		top: -2%;
 		left: 5%;
 	}
