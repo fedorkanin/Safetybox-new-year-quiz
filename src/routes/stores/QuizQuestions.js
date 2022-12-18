@@ -21,7 +21,7 @@ const quiz = [
 		user_selected: null
 	},
 	{
-		question: 'Где вы любите встречать Новый год?',
+		question: 'Где вы любите встречать Новый Год?',
 		answers: [
 			{ value: 'Chimney', label: 'Дома у камина' },
 			{ value: 'Palm', label: 'На море' },
