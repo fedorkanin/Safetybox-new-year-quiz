@@ -1,38 +1,34 @@
-# create-svelte
+# New Year Quiz for SafetyBox
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Welcome to the New Year Quiz project for safetybox.ru! This readme provides a quick overview to help you get started.
 
-## Creating a project
+## Getting Started
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. **Clone the Repo**: Clone the repository to your local machine.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+   ```bash
+   git clone https://github.com/fedorkanin/safetybox-new-year-quiz.git
+   ```
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+2. **Install Dependencies**: Navigate to the project directory and install dependencies.
 
-## Developing
+   ```bash
+   cd safetybox-new-year-quiz
+   npm install
+   ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+3. **Start Dev Server**: Launch the development server.
 
-```bash
-npm run dev
+   ```bash
+   npm run dev
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+4. **Open in Browser**: Visit [http://localhost:3000](http://localhost:3000) to see the quiz.
 
-## Building
+## Usage
 
-To create a production version of your app:
+This quiz lets users answer questions, and based on their choices, displays images and plays music after the quiz.
 
-```bash
-npm run build
-```
+## License
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Licensed under the [MIT License](LICENSE).
